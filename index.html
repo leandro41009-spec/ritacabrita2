@@ -8,6 +8,7 @@
 </head>
 <body class="bg-[#0d0d0d] text-gray-200 font-sans selection:bg-amber-500 selection:text-black">
 
+    <!-- NAV BAR / CABEÇALHO -->
     <nav class="border-b border-zinc-800 bg-[#121212]/90 backdrop-blur sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center">
@@ -16,11 +17,13 @@
             <div class="space-x-6 text-sm font-medium">
                 <a href="#inicio" class="hover:text-amber-500 transition">Início</a>
                 <a href="#parodias" class="hover:text-amber-500 transition">Paródias</a>
+                <a href="#looks" class="hover:text-amber-500 transition">Looks</a>
                 <a href="#ebooks" class="hover:text-amber-500 transition">E-books</a>
             </div>
         </div>
     </nav>
 
+    <!-- HERO SECTION (INÍCIO) COM IMAGEM DE FUNDO PERSONALIZADA -->
     <header id="inicio" class="relative py-28 text-center px-4 overflow-hidden bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(to bottom, rgba(13, 13, 13, 0.55), #0d0d0d), url('ritalayout.jpg');">
         <div class="max-w-3xl mx-auto relative z-10 my-8">
             <p class="text-amber-500 uppercase tracking-widest text-xs font-bold mb-3">Sertanejo & Forró • Paródias Políticas</p>
@@ -39,11 +42,13 @@
         </div>
     </header>
 
+    <!-- SEÇÃO LANÇAMENTOS / ÁLBUNS -->
     <section id="parodias" class="max-w-6xl mx-auto px-4 py-16">
-        <h2 class="text-3xl font-black text-center text-white mb-2 tracking-tight">Últimas Críticas Musicales</h2>
+        <h2 class="text-3xl font-black text-center text-white mb-2 tracking-tight">Últimas Críticas Musicais</h2>
         <p class="text-center text-amber-500 text-sm mb-12 uppercase tracking-wider font-semibold">Direto das Urnas para o Povo</p>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 - Me Ferrei -->
             <div class="bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition group flex flex-col shadow-xl">
                 <div class="aspect-square w-full overflow-hidden bg-zinc-900">
                     <img src="capa3.jpg" alt="Álbum Me Ferrei" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
@@ -57,6 +62,7 @@
                 </div>
             </div>
 
+            <!-- Card 2 - Cadê minha picanha? -->
             <div class="bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition group flex flex-col shadow-xl">
                 <div class="aspect-square w-full overflow-hidden bg-zinc-900">
                     <img src="capa4.jpg" alt="Álbum Cadê Minha Picanha" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
@@ -70,6 +76,7 @@
                 </div>
             </div>
 
+            <!-- Card 3 - Ninguém viu a cor -->
             <div class="bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition group flex flex-col shadow-xl">
                 <div class="aspect-square w-full overflow-hidden bg-zinc-900">
                     <img src="capa5.jpg" alt="Álbum Ninguém viu a cor" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
@@ -85,12 +92,106 @@
         </div>
     </section>
 
+    <!-- SEÇÃO DE LOOKS (VITRINE AFILIADOS) -->
+    <section id="looks" class="max-w-6xl mx-auto px-4 py-16 border-t border-zinc-800/60">
+        <h2 class="text-3xl font-black text-center text-white mb-2 tracking-tight">Os Looks da Rita</h2>
+        <p class="text-center text-amber-500 text-sm mb-12 uppercase tracking-wider font-semibold">Consiga as peças exclusivas com estilo country premium</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Look 1 - Chocolate Premium -->
+            <div class="bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition flex flex-col shadow-xl">
+                <div class="aspect-[3/4] w-full overflow-hidden bg-zinc-900">
+                    <img src="look4.jpg" alt="Look Country Chocolate" class="w-full h-full object-cover hover:scale-102 transition duration-300">
+                </div>
+                <div class="p-5 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs text-amber-500 font-bold uppercase tracking-wider">Look 01 • Estilo Modão</span>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-4">Coleção Caramelo Couro</h3>
+                    </div>
+                    <!-- CTAs Individuais por Produto -->
+                    <div class="space-y-2">
+                        <a href="#" target="_blank" class="w-full bg-zinc-800 hover:bg-zinc-700 text-white text-xs font-bold py-2.5 px-4 rounded-lg flex justify-between items-center transition">
+                            <span>🤠 Chapéu Country Preto</span>
+                            <span class="text-amber-500 font-black text-sm">Comprar →</span>
+                        </a>
+                        <a href="#" target="_blank" class="w-full bg-zinc-800 hover:bg-zinc-700 text-white text-xs font-bold py-2.5 px-4 rounded-lg flex justify-between items-center transition">
+                            <span>👗 Vestido Corset Marrom</span>
+                            <span class="text-amber-500 font-black text-sm">Comprar →</span>
+                        </a>
+                        <a href="#" target="_blank" class="w-full bg-zinc-800 hover:bg-zinc-700 text-white text-xs font-bold py-2.5 px-4 rounded-lg flex justify-between items-center transition">
+                            <span>👢 Bota de Couro com Tachas</span>
+                            <span class="text-amber-500 font-black text-sm">Comprar →</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Look 2 - Rodeio Jeans -->
+            <div class="bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition flex flex-col shadow-xl">
+                <div class="aspect-[3/4] w-full overflow-hidden bg-zinc-900">
+                    <img src="look5.jpg" alt="Look Jeans Piseiro" class="w-full h-full object-cover hover:scale-102 transition duration-300">
+                </div>
+                <div class="p-5 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs text-amber-500 font-bold uppercase tracking-wider">Look 02 • Estilo Piseiro</span>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-4">Coleção Jeans do Sertão</h3>
+                    </div>
+                    <!-- CTAs Individuais por Produto -->
+                    <div class="space-y-2">
+                        <a href="#" target="_blank" class="w-full bg-zinc-800 hover:bg-zinc-700 text-white text-xs font-bold py-2.5 px-4 rounded-lg flex justify-between items-center transition">
+                            <span>🤠 Chapéu Texano Preto</span>
+                            <span class="text-amber-500 font-black text-sm">Comprar →</span>
+                        </a>
+                        <a href="#" target="_blank" class="w-full bg-zinc-800 hover:bg-zinc-700 text-white text-xs font-bold py-2.5 px-4 rounded-lg flex justify-between items-center transition">
+                            <span>👗 Vestido Jeans Assimétrico</span>
+                            <span class="text-amber-500 font-black text-sm">Comprar →</span>
+                        </a>
+                        <a href="#" target="_blank" class="w-full bg-zinc-800 hover:bg-zinc-700 text-white text-xs font-bold py-2.5 px-4 rounded-lg flex justify-between items-center transition">
+                            <span>👢 Bota Western Detalhada</span>
+                            <span class="text-amber-500 font-black text-sm">Comprar →</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Look 3 - Rainha da Noite -->
+            <div class="bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition flex flex-col shadow-xl">
+                <div class="aspect-[3/4] w-full overflow-hidden bg-zinc-900">
+                    <img src="look6.jpg" alt="Look Balada Country" class="w-full h-full object-cover hover:scale-102 transition duration-300">
+                </div>
+                <div class="p-5 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs text-amber-500 font-bold uppercase tracking-wider">Look 03 • Estilo Noite</span>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-4">Glow com Franjas</h3>
+                    </div>
+                    <!-- CTAs Individuais por Produto -->
+                    <div class="space-y-2">
+                        <a href="#" target="_blank" class="w-full bg-zinc-800 hover:bg-zinc-700 text-white text-xs font-bold py-2.5 px-4 rounded-lg flex justify-between items-center transition">
+                            <span>🤠 Chapéu Country Clássico</span>
+                            <span class="text-amber-500 font-black text-sm">Comprar →</span>
+                        </a>
+                        <a href="#" target="_blank" class="w-full bg-zinc-800 hover:bg-zinc-700 text-white text-xs font-bold py-2.5 px-4 rounded-lg flex justify-between items-center transition">
+                            <span>👗 Vestido Preto com Franjas</span>
+                            <span class="text-amber-500 font-black text-sm">Comprar →</span>
+                        </a>
+                        <a href="#" target="_blank" class="w-full bg-zinc-800 hover:bg-zinc-700 text-white text-xs font-bold py-2.5 px-4 rounded-lg flex justify-between items-center transition">
+                            <span>👢 Bota Montaria Escura</span>
+                            <span class="text-amber-500 font-black text-sm">Comprar →</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DOS E-BOOKS -->
     <section id="ebooks" class="bg-[#121212] border-y border-zinc-800 py-20 px-4">
         <div class="max-w-5xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-black text-center text-white mb-2 tracking-tight">Aprenda os Bastidores do Projeto</h2>
             <p class="text-center text-amber-500 text-sm mb-16 uppercase tracking-wider font-semibold">Descubra como criar seu próprio fenômeno musical com IA</p>
 
             <div class="space-y-20">
+                <!-- E-book 1 -->
                 <div class="flex flex-col md:flex-row items-center gap-12">
                     <div class="flex-1 order-2 md:order-1">
                         <span class="text-amber-500 font-bold uppercase tracking-widest text-xs">Volume 1 • Guia Prático</span>
@@ -107,12 +208,13 @@
                     </div>
                 </div>
 
+                <!-- E-book 2 -->
                 <div class="flex flex-col md:flex-row items-center gap-12 pt-12 border-t border-zinc-800/50">
                     <div class="flex-1 flex justify-center">
                         <img src="capa2.jpg" alt="Capa Ebook Criar Música" class="w-64 h-auto rounded-2xl shadow-2xl border border-zinc-800 transform hover:scale-102 transition duration-300">
                     </div>
                     <div class="flex-1">
-                        <span class="text-amber-500 font-bold uppercase tracking-widest text-xs">Volume 2 • Produção Musical</span>
+                        <span class="text-amber-500 font-bold uppercase tracking-widest text-xs">Volume 2 • Production Musical</span>
                         <h3 class="text-2xl md:text-3xl font-extrabold text-white mt-2 mb-4">Aprenda a Criar Música com IA</h3>
                         <p class="text-gray-400 mb-6 leading-relaxed">
                             Domine as ferramentas tecnológicas de última geração. Escreva letras, gere melodias profissionais de sertanejo/forró e distribua no Spotify.
@@ -126,8 +228,9 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="text-center py-10 text-xs text-zinc-600 border-t border-zinc-950">
-        <p>© 2026 Rita Cabrita. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Rita Cabrita. Todos os direitos reservados.</p>
     </footer>
 
 </body>

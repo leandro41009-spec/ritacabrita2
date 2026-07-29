@@ -92,97 +92,120 @@
         </div>
     </section>
 
- <!-- SEÇÃO DE LOOKS (MODO DRIBLAR A CRISE) -->
-    <section id="looks" class="max-w-6xl mx-auto px-4 py-16 border-t border-zinc-800/60">
-        <h2 class="text-3xl font-black text-center text-white mb-2 tracking-tight">Looks pra Driblar a Crise</h2>
-        <p class="text-center text-amber-500 text-sm mb-12 uppercase tracking-wider font-semibold">💸 COMO DRIBLAR A CRISE COM ESTILO: LOOKS MAIS BARATOS QUE 1KG DE PICANHA!</p>
+<!-- SEÇÃO LOOKS COM CARROSSEL E SETAS DE NAVEGAÇÃO -->
+<section id="looks" class="max-w-6xl mx-auto px-4 py-16 relative">
+    <h2 class="text-3xl font-black text-center text-white mb-2 tracking-tight">Looks pra Driblar a Crise</h2>
+    <p class="text-center text-amber-500 text-xs md:text-sm mb-6 uppercase tracking-wider font-semibold">
+        💸 COMO DRIBLAR A CRISE COM ESTILO: LOOKS MAIS BARATOS QUE 1KG DE PICANHA!
+    </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Look 1 -->
-            <div class="bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition flex flex-col shadow-xl">
-                <div class="aspect-[3/4] w-full overflow-hidden bg-zinc-900">
-                    <img src="look4.png" alt="Look Country Chocolate" class="w-full h-full object-cover hover:scale-102 transition duration-300">
+    <!-- CONTAINER RELATIVO PARA AS SETAS E CARROSSEL -->
+    <div class="relative group">
+
+        <!-- SETA ESQUERDA (DESKTOP/TABLET) -->
+        <button onclick="document.getElementById('carousel-looks').scrollBy({left: -320, behavior: 'smooth'})" 
+                class="hidden md:flex absolute -left-5 top-1/2 -translate-y-1/2 z-10 bg-amber-500 hover:bg-amber-400 text-black font-black p-3 rounded-full shadow-2xl transition transform hover:scale-110 items-center justify-center cursor-pointer">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"></path></svg>
+        </button>
+
+        <!-- CONTAINER DO CARROSSEL COM BARRAS DE ROLAGEM VISÍVEIS (custom-scrollbar) -->
+        <div id="carousel-looks" class="custom-scrollbar flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 pt-2 md:grid md:grid-cols-3">
+            
+            <!-- LOOK 01 -->
+            <div class="snap-center shrink-0 w-[85vw] sm:w-[350px] md:w-auto bg-[#121212] border border-zinc-800 rounded-3xl p-4 flex flex-col justify-between shadow-xl">
+                <div>
+                    <img src="look1.jpg" alt="Look 01" class="w-full h-[380px] object-cover rounded-2xl mb-4">
+                    <span class="text-xs text-amber-500 font-bold uppercase tracking-wider">LOOK 01 • ESTILO PATROA</span>
+                    <h3 class="text-xl font-black text-white mt-1 mb-2">Elegância do Boleto Pago</h3>
+                    <p class="text-xs text-gray-400 mb-6 leading-relaxed">
+                        Visual de patroa parcelado em 10x. Pra fingir costume na resenha antes que o governo monte em cima do imposto.
+                    </p>
                 </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <span class="text-xs text-amber-500 font-bold uppercase tracking-wider">Look 01 • Estilo Patroa</span>
-                        <h3 class="text-xl font-bold text-white mt-1 mb-2">Elegância do Boleto Pago</h3>
-                        <p class="text-gray-400 text-xs mb-4">Visual de patroa parcelado em 10x. Pra fingir costume na resenha antes que o governo monte em cima do imposto.</p>
+                <div class="space-y-2">
+                    <div class="bg-zinc-900/90 border border-zinc-800 rounded-xl p-3 flex justify-between items-center text-xs">
+                        <span class="text-gray-200 font-medium">🤠 Chapéu Falso Couro</span>
+                        <span class="text-amber-500 font-bold">Garimpos em Breve ⏳</span>
                     </div>
-                    <div class="space-y-2">
-                        <div class="w-full bg-zinc-800/60 text-gray-300 text-xs font-bold py-2.5 px-4 rounded-lg flex justify-between items-center">
-                            <span>🤠 Chapéu Falso Couro</span>
-                            <span class="text-amber-500/70 font-semibold text-xs">Garimpos em Breve ⏳</span>
-                        </div>
-                        <div class="w-full bg-zinc-800/60 text-gray-300 text-xs font-bold py-2.5 px-4 rounded-lg flex justify-between items-center">
-                            <span>👗 Vestido Corset Ajusta-Tudo</span>
-                            <span class="text-amber-500/70 font-semibold text-xs">Garimpos em Breve ⏳</span>
-                        </div>
-                        <div class="w-full bg-zinc-800/60 text-gray-300 text-xs font-bold py-2.5 px-4 rounded-lg flex justify-between items-center">
-                            <span>👢 Bota Que Parece Importada</span>
-                            <span class="text-amber-500/70 font-semibold text-xs">Garimpos em Breve ⏳</span>
-                        </div>
+                    <div class="bg-zinc-900/90 border border-zinc-800 rounded-xl p-3 flex justify-between items-center text-xs">
+                        <span class="text-gray-200 font-medium">👗 Vestido Corset Ajusta-Tudo</span>
+                        <span class="text-amber-500 font-bold">Garimpos em Breve ⏳</span>
+                    </div>
+                    <div class="bg-zinc-900/90 border border-zinc-800 rounded-xl p-3 flex justify-between items-center text-xs">
+                        <span class="text-gray-200 font-medium">👢 Bota Que Parece Importada</span>
+                        <span class="text-amber-500 font-bold">Garimpos em Breve ⏳</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Look 2 -->
-            <div class="bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition flex flex-col shadow-xl">
-                <div class="aspect-[3/4] w-full overflow-hidden bg-zinc-900">
-                    <img src="look5.png" alt="Look Jeans Piseiro" class="w-full h-full object-cover hover:scale-102 transition duration-300">
+            <!-- LOOK 02 -->
+            <div class="snap-center shrink-0 w-[85vw] sm:w-[350px] md:w-auto bg-[#121212] border border-zinc-800 rounded-3xl p-4 flex flex-col justify-between shadow-xl">
+                <div>
+                    <img src="look2.jpg" alt="Look 02" class="w-full h-[380px] object-cover rounded-2xl mb-4">
+                    <span class="text-xs text-amber-500 font-bold uppercase tracking-wider">LOOK 02 • MODO SOBREVIVÊNCIA</span>
+                    <h3 class="text-xl font-black text-white mt-1 mb-2">Jeans 'A Crise Tá Bruta'</h3>
+                    <p class="text-xs text-gray-400 mb-6 leading-relaxed">
+                        Estilo camponesa chique. Bonito, resistente e mais em conta do que ir ao supermercado no fim de semana.
+                    </p>
                 </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <span class="text-xs text-amber-500 font-bold uppercase tracking-wider">Look 02 • Modo Sobrevivência</span>
-                        <h3 class="text-xl font-bold text-white mt-1 mb-2">Jeans 'A Crise Tá Bruta'</h3>
-                        <p class="text-gray-400 text-xs mb-4">Estilo camponesa chique. Bonito, resistente e mais em conta do que ir ao supermercado no fim de semana.</p>
+                <div class="space-y-2">
+                    <div class="bg-zinc-900/90 border border-zinc-800 rounded-xl p-3 flex justify-between items-center text-xs">
+                        <span class="text-gray-200 font-medium">🤠 Chapéu Peguei na Promoção</span>
+                        <span class="text-amber-500 font-bold">Garimpos em Breve ⏳</span>
                     </div>
-                    <div class="space-y-2">
-                        <div class="w-full bg-zinc-800/60 text-gray-300 text-xs font-bold py-2.5 px-4 rounded-lg flex justify-between items-center">
-                            <span>🤠 Chapéu Peguei na Promoção</span>
-                            <span class="text-amber-500/70 font-semibold text-xs">Garimpos em Breve ⏳</span>
-                        </div>
-                        <div class="w-full bg-zinc-800/60 text-gray-300 text-xs font-bold py-2.5 px-4 rounded-lg flex justify-between items-center">
-                            <span>👗 Vestido Jeans Anti-Crise</span>
-                            <span class="text-amber-500/70 font-semibold text-xs">Garimpos em Breve ⏳</span>
-                        </div>
-                        <div class="w-full bg-zinc-800/60 text-gray-300 text-xs font-bold py-2.5 px-4 rounded-lg flex justify-between items-center">
-                            <span>👢 Bota Pronta pro Piseiro</span>
-                            <span class="text-amber-500/70 font-semibold text-xs">Garimpos em Breve ⏳</span>
-                        </div>
+                    <div class="bg-zinc-900/90 border border-zinc-800 rounded-xl p-3 flex justify-between items-center text-xs">
+                        <span class="text-gray-200 font-medium">👗 Vestido Jeans Anti-Crise</span>
+                        <span class="text-amber-500 font-bold">Garimpos em Breve ⏳</span>
+                    </div>
+                    <div class="bg-zinc-900/90 border border-zinc-800 rounded-xl p-3 flex justify-between items-center text-xs">
+                        <span class="text-gray-200 font-medium">👢 Bota Pronta pro Piseiro</span>
+                        <span class="text-amber-500 font-bold">Garimpos em Breve ⏳</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Look 3 -->
-            <div class="bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition flex flex-col shadow-xl">
-                <div class="aspect-[3/4] w-full overflow-hidden bg-zinc-900">
-                    <img src="look6.png" alt="Look Balada Country" class="w-full h-full object-cover hover:scale-102 transition duration-300">
+            <!-- LOOK 03 -->
+            <div class="snap-center shrink-0 w-[85vw] sm:w-[350px] md:w-auto bg-[#121212] border border-zinc-800 rounded-3xl p-4 flex flex-col justify-between shadow-xl">
+                <div>
+                    <img src="look3.jpg" alt="Look 03" class="w-full h-[380px] object-cover rounded-2xl mb-4">
+                    <span class="text-xs text-amber-500 font-bold uppercase tracking-wider">LOOK 03 • VALE-REFEIÇÃO</span>
+                    <h3 class="text-xl font-black text-white mt-1 mb-2">Luxo no Carnê</h3>
+                    <p class="text-xs text-gray-400 mb-6 leading-relaxed">
+                        Franjas pra balançar e causar no piseiro. Garanta o visual antes que resolvam taxar até a sola da bota.
+                    </p>
                 </div>
-                <div class="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                        <span class="text-xs text-amber-500 font-bold uppercase tracking-wider">Look 03 • Vale-Refeição</span>
-                        <h3 class="text-xl font-bold text-white mt-1 mb-2">Luxo no Carnê</h3>
-                        <p class="text-gray-400 text-xs mb-4">Franjas pra balançar e causar no piseiro. Garanta o visual antes que resolvam taxar até a sola da bota.</p>
+                <div class="space-y-2">
+                    <div class="bg-zinc-900/90 border border-zinc-800 rounded-xl p-3 flex justify-between items-center text-xs">
+                        <span class="text-gray-200 font-medium">🤠 Chapéu Clássico Anti-Inveja</span>
+                        <span class="text-amber-500 font-bold">Garimpos em Breve ⏳</span>
                     </div>
-                    <div class="space-y-2">
-                        <div class="w-full bg-zinc-800/60 text-gray-300 text-xs font-bold py-2.5 px-4 rounded-lg flex justify-between items-center">
-                            <span>🤠 Chapéu Clássico Anti-Inveja</span>
-                            <span class="text-amber-500/70 font-semibold text-xs">Garimpos em Breve ⏳</span>
-                        </div>
-                        <div class="w-full bg-zinc-800/60 text-gray-300 text-xs font-bold py-2.5 px-4 rounded-lg flex justify-between items-center">
-                            <span>👗 Vestido 'Esconde-Boleto'</span>
-                            <span class="text-amber-500/70 font-semibold text-xs">Garimpos em Breve ⏳</span>
-                        </div>
-                        <div class="w-full bg-zinc-800/60 text-gray-300 text-xs font-bold py-2.5 px-4 rounded-lg flex justify-between items-center">
-                            <span>👢 Bota Montaria do Fim de Semana</span>
-                            <span class="text-amber-500/70 font-semibold text-xs">Garimpos em Breve ⏳</span>
-                        </div>
+                    <div class="bg-zinc-900/90 border border-zinc-800 rounded-xl p-3 flex justify-between items-center text-xs">
+                        <span class="text-gray-200 font-medium">👗 Vestido 'Esconde-Boleto'</span>
+                        <span class="text-amber-500 font-bold">Garimpos em Breve ⏳</span>
+                    </div>
+                    <div class="bg-zinc-900/90 border border-zinc-800 rounded-xl p-3 flex justify-between items-center text-xs">
+                        <span class="text-gray-200 font-medium">👢 Bota Montaria do Fim de Semana</span>
+                        <span class="text-amber-500 font-bold">Garimpos em Breve ⏳</span>
                     </div>
                 </div>
             </div>
+
         </div>
-    </section>
+
+        <!-- SETA DIREITA (DESKTOP/TABLET) -->
+        <button onclick="document.getElementById('carousel-looks').scrollBy({left: 320, behavior: 'smooth'})" 
+                class="hidden md:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 bg-amber-500 hover:bg-amber-400 text-black font-black p-3 rounded-full shadow-2xl transition transform hover:scale-110 items-center justify-center cursor-pointer">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"></path></svg>
+        </button>
+
+    </div>
+
+    <!-- INDICADOR CHAMATIVO COM SETAS PARA CELULAR (MOBILE) -->
+    <div class="flex md:hidden items-center justify-center gap-2 mt-4 bg-amber-500/10 border border-amber-500/30 py-2.5 px-4 rounded-xl text-amber-500 font-bold text-xs tracking-wider uppercase animate-pulse">
+        <span>👈</span>
+        <span>DESLIZE PARA OS LADOS PARA VER MAIS LOOKS</span>
+        <span>👉</span>
+    </div>
+</section>
 
 <!-- SEÇÃO E-BOOK ÚNICO (BASTIDORES DO PROJETO) -->
     <section id="ebooks" class="max-w-6xl mx-auto px-4 py-16 border-t border-zinc-800/60">

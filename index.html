@@ -49,7 +49,7 @@
                 Do piseiro pesado ao sertanejo, o ritmo perfeito pra ligar o som no talo e reunir a galera.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://open.spotify.com/playlist/4ZIFNgVEIhRj6HORa77v4G?si=ks9bnugXRsK_SMMuvYOkiw" target="_blank" class="bg-[#1DB954] hover:bg-[#1ed760] text-black font-black px-8 py-4 rounded-full transition flex items-center justify-center gap-2 shadow-lg">
+                <a href="https://open.spotify.com/playlist/4ZIFNgVEIhRj6HORa77v4G?si=XQ7OZKScSky497mVBQHyDg" target="_blank" class="bg-[#1DB954] hover:bg-[#1ed760] text-black font-black px-8 py-4 rounded-full transition flex items-center justify-center gap-2 shadow-lg">
                     🎧 Ouvir no Spotify
                 </a>
                 <a href="#looks" class="bg-black/60 border-2 border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-black font-bold px-8 py-4 rounded-full transition backdrop-blur-sm">
@@ -60,52 +60,163 @@
     </header>
 
     <!-- SEÇÃO LANÇAMENTOS / ÁLBUNS -->
-    <section id="musicas" class="max-w-6xl mx-auto px-4 py-16">
+    <section id="musicas" class="max-w-6xl mx-auto px-4 py-16 relative">
         <h2 class="text-3xl font-black text-center text-white mb-2 tracking-tight">Lançamentos Oficiais</h2>
-        <p class="text-center text-amber-500 text-sm mb-12 uppercase tracking-wider font-semibold">🔥 BOTA ESSA PRA TOCAR PERTO DO AMIGO QUE FEZ O 'L' DE LASCADO</p>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Card 1 - Me Ferrei -->
-            <div class="bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition group flex flex-col shadow-xl">
-                <div class="aspect-square w-full overflow-hidden bg-zinc-900">
-                    <img src="capa3.jpg" alt="Álbum Me Ferrei" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                </div>
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-xl font-bold text-white mb-2">Me Ferrei, Me Ferrei!</h3>
-                        <p class="text-gray-400 text-sm mb-4">O modão do trabalhador que sentiu no bolso o resultado da escolha. Piseiro bruto e sem filtro.</p>
+        <p class="text-center text-amber-500 text-sm mb-8 uppercase tracking-wider font-semibold">🔥 BOTA ESSA PRA TOCAR PERTO DO AMIGO QUE FEZ O 'L' DE LASCADO</p>
+
+        <!-- CONTAINER RELATIVO PARA AS SETAS E CARROSSEL -->
+        <div class="relative group">
+
+            <!-- SETA ESQUERDA (DESKTOP/TABLET) -->
+            <button onclick="document.getElementById('carousel-albuns').scrollBy({left: -320, behavior: 'smooth'})" 
+                    class="hidden md:flex absolute -left-5 top-1/2 -translate-y-1/2 z-10 bg-amber-500 hover:bg-amber-400 text-black font-black p-3 rounded-full shadow-2xl transition transform hover:scale-110 items-center justify-center cursor-pointer">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"></path></svg>
+            </button>
+
+            <!-- CONTAINER DO CARROSSEL DE ÁLBUNS -->
+            <div id="carousel-albuns" class="custom-scrollbar flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 pt-2">
+                
+                <!-- CAPA 01: Então Para, Não Taxa! -->
+                <div class="snap-center shrink-0 w-[85vw] sm:w-[320px] bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition group flex flex-col shadow-xl">
+                    <div class="aspect-square w-full overflow-hidden bg-zinc-900">
+                        <img src="entao-para-nao-taxa.png" alt="Então Para, Não Taxa!" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
                     </div>
-                    <a href="https://open.spotify.com/playlist/4ZIFNgVEIhRj6HORa77v4G?si=ks9bnugXRsK_SMMuvYOkiw" target="_blank" class="text-sm text-[#1DB954] font-black group-hover:underline inline-flex items-center gap-1">🎧 Ouvir na Playlist no Spotify →</a>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Então Para, Não Taxa!</h3>
+                            <p class="text-gray-400 text-sm mb-4">Aquele protesto bem-humorado em ritmo de piseiro pra cantar junto no churrasco.</p>
+                        </div>
+                        <a href="https://open.spotify.com/playlist/4ZIFNgVEIhRj6HORa77v4G?si=XQ7OZKScSky497mVBQHyDg" target="_blank" class="text-sm text-[#1DB954] font-black group-hover:underline inline-flex items-center gap-1">🎧 Ouvir no Spotify →</a>
+                    </div>
                 </div>
+
+                <!-- CAPA 02: Se Deu Mal, Se Deu Mal! -->
+                <div class="snap-center shrink-0 w-[85vw] sm:w-[320px] bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition group flex flex-col shadow-xl">
+                    <div class="aspect-square w-full overflow-hidden bg-zinc-900">
+                        <img src="se-deu-mal-se-deu-mal.png" alt="Se Deu Mal, Se Deu Mal!" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Se Deu Mal, Se Deu Mal!</h3>
+                            <p class="text-gray-400 text-sm mb-4">Modão direto ao ponto sobre o arrependimento e a conta que chegou.</p>
+                        </div>
+                        <a href="https://open.spotify.com/playlist/4ZIFNgVEIhRj6HORa77v4G?si=XQ7OZKScSky497mVBQHyDg" target="_blank" class="text-sm text-[#1DB954] font-black group-hover:underline inline-flex items-center gap-1">🎧 Ouvir no Spotify →</a>
+                    </div>
+                </div>
+
+                <!-- CAPA 03: Fez o L e Se Ferrou -->
+                <div class="snap-center shrink-0 w-[85vw] sm:w-[320px] bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition group flex flex-col shadow-xl">
+                    <div class="aspect-square w-full overflow-hidden bg-zinc-900">
+                        <img src="fez-o-l-e-se-ferrou.png" alt="Fez o L e Se Ferrou" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Fez o L e Se Ferrou</h3>
+                            <p class="text-gray-400 text-sm mb-4">Forró estourado pra dedicar pro colega que ainda tá tentando justificar.</p>
+                        </div>
+                        <a href="https://open.spotify.com/playlist/4ZIFNgVEIhRj6HORa77v4G?si=XQ7OZKScSky497mVBQHyDg" target="_blank" class="text-sm text-[#1DB954] font-black group-hover:underline inline-flex items-center gap-1">🎧 Ouvir no Spotify →</a>
+                    </div>
+                </div>
+
+                <!-- CAPA 04: Fez o L de Lascado -->
+                <div class="snap-center shrink-0 w-[85vw] sm:w-[320px] bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition group flex flex-col shadow-xl">
+                    <div class="aspect-square w-full overflow-hidden bg-zinc-900">
+                        <img src="fez-o-l-e-de-lascado.png" alt="Fez o L de Lascado" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Fez o L de Lascado</h3>
+                            <p class="text-gray-400 text-sm mb-4">Hit pra aumentar o volume e dar aquela risada com a turma.</p>
+                        </div>
+                        <a href="https://open.spotify.com/playlist/4ZIFNgVEIhRj6HORa77v4G?si=XQ7OZKScSky497mVBQHyDg" target="_blank" class="text-sm text-[#1DB954] font-black group-hover:underline inline-flex items-center gap-1">🎧 Ouvir no Spotify →</a>
+                    </div>
+                </div>
+
+                <!-- CAPA 05: Da Tal Picanha Ninguém Viu Nem a Cor -->
+                <div class="snap-center shrink-0 w-[85vw] sm:w-[320px] bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition group flex flex-col shadow-xl">
+                    <div class="aspect-square w-full overflow-hidden bg-zinc-900">
+                        <img src="da-tal-picanha-ninguem-viu-nem-a-cor.png" alt="Da Tal Picanha Ninguém Viu Nem a Cor" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Da Tal Picanha Ninguém Viu Nem a Cor</h3>
+                            <p class="text-gray-400 text-sm mb-4">Cadê a carne da grelha? A pergunta que não quer calar virou música!</p>
+                        </div>
+                        <a href="https://open.spotify.com/playlist/4ZIFNgVEIhRj6HORa77v4G?si=XQ7OZKScSky497mVBQHyDg" target="_blank" class="text-sm text-[#1DB954] font-black group-hover:underline inline-flex items-center gap-1">🎧 Ouvir no Spotify →</a>
+                    </div>
+                </div>
+
+                <!-- CAPA 06: Me Ferrei, Me Ferrei! -->
+                <div class="snap-center shrink-0 w-[85vw] sm:w-[320px] bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition group flex flex-col shadow-xl">
+                    <div class="aspect-square w-full overflow-hidden bg-zinc-900">
+                        <img src="me-ferrei-me-ferrei.png" alt="Me Ferrei, Me Ferrei!" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Me Ferrei, Me Ferrei!</h3>
+                            <p class="text-gray-400 text-sm mb-4">O desabafo ritmado do trabalhador que sentiu a pesada conta no final do mês.</p>
+                        </div>
+                        <a href="https://open.spotify.com/playlist/4ZIFNgVEIhRj6HORa77v4G?si=XQ7OZKScSky497mVBQHyDg" target="_blank" class="text-sm text-[#1DB954] font-black group-hover:underline inline-flex items-center gap-1">🎧 Ouvir no Spotify →</a>
+                    </div>
+                </div>
+
+                <!-- CAPA 07: E o Imposto Vem Que Vem -->
+                <div class="snap-center shrink-0 w-[85vw] sm:w-[320px] bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition group flex flex-col shadow-xl">
+                    <div class="aspect-square w-full overflow-hidden bg-zinc-900">
+                        <img src="e-o-imposto-vem-que-vem.png" alt="E o Imposto Vem Que Vem" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">E o Imposto Vem Que Vem</h3>
+                            <p class="text-gray-400 text-sm mb-4">A taxa em cima de taxa gravada no ritmo contagiante do piseiro.</p>
+                        </div>
+                        <a href="https://open.spotify.com/playlist/4ZIFNgVEIhRj6HORa77v4G?si=XQ7OZKScSky497mVBQHyDg" target="_blank" class="text-sm text-[#1DB954] font-black group-hover:underline inline-flex items-center gap-1">🎧 Ouvir no Spotify →</a>
+                    </div>
+                </div>
+
+                <!-- CAPA 08: Só Sobrou o Osso pra Chupar -->
+                <div class="snap-center shrink-0 w-[85vw] sm:w-[320px] bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition group flex flex-col shadow-xl">
+                    <div class="aspect-square w-full overflow-hidden bg-zinc-900">
+                        <img src="so-sobrou-o-osso-pra-chupar.png" alt="Só Sobrou o Osso pra Chupar" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Só Sobrou o Osso pra Chupar</h3>
+                            <p class="text-gray-400 text-sm mb-4">Quando o churrasco encolhe e o bolso chora, o modão entra em cena.</p>
+                        </div>
+                        <a href="https://open.spotify.com/playlist/4ZIFNgVEIhRj6HORa77v4G?si=XQ7OZKScSky497mVBQHyDg" target="_blank" class="text-sm text-[#1DB954] font-black group-hover:underline inline-flex items-center gap-1">🎧 Ouvir no Spotify →</a>
+                    </div>
+                </div>
+
+                <!-- CAPA 09: Cadê, Cadê? -->
+                <div class="snap-center shrink-0 w-[85vw] sm:w-[320px] bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition group flex flex-col shadow-xl">
+                    <div class="aspect-square w-full overflow-hidden bg-zinc-900">
+                        <img src="cade-cade.png" alt="Cadê, Cadê?" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Cadê, Cadê?</h3>
+                            <p class="text-gray-400 text-sm mb-4">Cadê a picanha, cadê a cerveja? A pergunta que não quer calar.</p>
+                        </div>
+                        <a href="https://open.spotify.com/playlist/4ZIFNgVEIhRj6HORa77v4G?si=XQ7OZKScSky497mVBQHyDg" target="_blank" class="text-sm text-[#1DB954] font-black group-hover:underline inline-flex items-center gap-1">🎧 Ouvir no Spotify →</a>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- Card 2 - Cadê minha picanha? -->
-            <div class="bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition group flex flex-col shadow-xl">
-                <div class="aspect-square w-full overflow-hidden bg-zinc-900">
-                    <img src="capa4.jpg" alt="Álbum Cadê Minha Picanha" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                </div>
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-xl font-bold text-white mb-2">Cadê Minha Picanha?</h3>
-                        <p class="text-gray-400 text-sm mb-4">Aquele piseiro de resposta sobre a promessa que sumiu da grelha. Hit certo pro fim de semana.</p>
-                    </div>
-                    <a href="https://open.spotify.com/playlist/4ZIFNgVEIhRj6HORa77v4G?si=ks9bnugXRsK_SMMuvYOkiw" target="_blank" class="text-sm text-[#1DB954] font-black group-hover:underline inline-flex items-center gap-1">🎧 Ouvir na Playlist no Spotify →</a>
-                </div>
-            </div>
+            <!-- SETA DIREITA (DESKTOP/TABLET) -->
+            <button onclick="document.getElementById('carousel-albuns').scrollBy({left: 320, behavior: 'smooth'})" 
+                    class="hidden md:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 bg-amber-500 hover:bg-amber-400 text-black font-black p-3 rounded-full shadow-2xl transition transform hover:scale-110 items-center justify-center cursor-pointer">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"></path></svg>
+            </button>
 
-            <!-- Card 3 - O Imposto Vem Que Vem -->
-            <div class="bg-[#121212] border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500 transition group flex flex-col shadow-xl">
-                <div class="aspect-square w-full overflow-hidden bg-zinc-900">
-                    <img src="capa5.jpg" alt="Álbum O Imposto Vem Que Vem" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                </div>
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-xl font-bold text-white mb-2">O Imposto Vem Que Vem</h3>
-                        <p class="text-gray-400 text-sm mb-4">O hit viral das redes sociais que canta a realidade do brasileiro no ritmo contagiante do forró piseiro.</p>
-                    </div>
-                    <a href="https://open.spotify.com/playlist/4ZIFNgVEIhRj6HORa77v4G?si=ks9bnugXRsK_SMMuvYOkiw" target="_blank" class="text-sm text-[#1DB954] font-black group-hover:underline inline-flex items-center gap-1">🎧 Ouvir na Playlist no Spotify →</a>
-                </div>
-            </div>
+        </div>
+
+        <!-- INDICADOR MOBILE -->
+        <div class="flex md:hidden items-center justify-center gap-2 mt-4 bg-amber-500/10 border border-amber-500/30 py-2.5 px-4 rounded-xl text-amber-500 font-bold text-xs tracking-wider uppercase animate-pulse">
+            <span>👈</span>
+            <span>DESLIZE PARA OS LADOS PARA VER MAIS LANÇAMENTOS</span>
+            <span>👉</span>
         </div>
     </section>
 
@@ -125,7 +236,7 @@
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"></path></svg>
             </button>
 
-            <!-- CONTAINER DO CARROSSEL COM BARRAS DE ROLAGEM VISÍVEIS (custom-scrollbar) -->
+            <!-- CONTAINER DO CARROSSEL DE LOOKS -->
             <div id="carousel-looks" class="custom-scrollbar flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 pt-2 md:grid md:grid-cols-3">
                 
                 <!-- LOOK 01 -->
@@ -139,7 +250,6 @@
                         </p>
                     </div>
                     
-                    <!-- BOTÕES CTA: LARANJA COM BADGE VERDE E TEXTO BRANCO EM NEGRITO -->
                     <div class="space-y-3">
                         <a href="#" target="_blank" class="w-full bg-amber-500 hover:bg-amber-400 border-b-4 border-amber-700 hover:border-amber-600 active:translate-y-1 active:border-b-0 rounded-xl p-3 flex justify-between items-center text-xs font-black text-black shadow-lg shadow-amber-500/25 transition-all duration-150">
                             <span class="truncate pr-2">🤠 Chapéu Falso Couro</span>
@@ -167,7 +277,6 @@
                         </p>
                     </div>
 
-                    <!-- BOTÕES CTA: LARANJA COM BADGE VERDE E TEXTO BRANCO EM NEGRITO -->
                     <div class="space-y-3">
                         <a href="#" target="_blank" class="w-full bg-amber-500 hover:bg-amber-400 border-b-4 border-amber-700 hover:border-amber-600 active:translate-y-1 active:border-b-0 rounded-xl p-3 flex justify-between items-center text-xs font-black text-black shadow-lg shadow-amber-500/25 transition-all duration-150">
                             <span class="truncate pr-2">🤠 Chapéu Peguei na Promoção</span>
@@ -195,7 +304,6 @@
                         </p>
                     </div>
 
-                    <!-- BOTÕES CTA: LARANJA COM BADGE VERDE E TEXTO BRANCO EM NEGRITO -->
                     <div class="space-y-3">
                         <a href="#" target="_blank" class="w-full bg-amber-500 hover:bg-amber-400 border-b-4 border-amber-700 hover:border-amber-600 active:translate-y-1 active:border-b-0 rounded-xl p-3 flex justify-between items-center text-xs font-black text-black shadow-lg shadow-amber-500/25 transition-all duration-150">
                             <span class="truncate pr-2">🤠 Chapéu Clássico Anti-Inveja</span>
@@ -222,7 +330,7 @@
 
         </div>
 
-        <!-- INDICADOR CHAMATIVO COM SETAS PARA CELULAR (MOBILE) -->
+        <!-- INDICADOR MOBILE -->
         <div class="flex md:hidden items-center justify-center gap-2 mt-4 bg-amber-500/10 border border-amber-500/30 py-2.5 px-4 rounded-xl text-amber-500 font-bold text-xs tracking-wider uppercase animate-pulse">
             <span>👈</span>
             <span>DESLIZE PARA OS LADOS PARA VER MAIS LOOKS</span>
